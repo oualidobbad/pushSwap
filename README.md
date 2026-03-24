@@ -19,5 +19,10 @@ Sorting challenge using two stacks (A/B) and limited operations.
 ## Example
 - `./push_swap "2 1"` -> `sa`.
 
+## Technical Notes
+- Uses two linked-list stacks; operations are constrained to sa/sb/ss/pa/pb/ra/rb/rr/rra/rrb/rrr.
+- Small input: handcrafted sequences; large input: radix/chunk strategy on indexed values (LSD radix base 2).
+- Input parsing validates duplicates, range (int), and numeric tokens; exits with error on invalid data.
+
 ## Author
 - Oualid Obbad (@oualidobbad)
